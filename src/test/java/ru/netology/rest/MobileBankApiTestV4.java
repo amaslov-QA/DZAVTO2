@@ -15,7 +15,7 @@ class MobileBankApiTestV4 {
                 .when()
                 .get("/demo/accounts")
                 .then()
-                .statusCode(200)
+                .statusCode(404)
                 .body(matchesJsonSchemaInClasspath("accounts.schema.json"))
         ;
     }
